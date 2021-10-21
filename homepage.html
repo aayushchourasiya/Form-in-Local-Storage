@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Sign Up!
+    </title>
+        <style>
+            body{
+                padding-left: 40%;
+                padding-top: 20%;
+            }
+            table, tr, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return saveData()">
+            <table>
+                <tr>
+                    <td>Name : </td>
+                    <td><input type="text" id="name" placeholder="Enter your name here!" required></td>
+                </tr>
+                <tr>
+                    <td>Age : </td>
+                    <td><input type="number" id="age" placeholder="Enter your age here!" required min="1" max="99"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" id="email" placeholder="Enter your email here!" required></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" id="password" placeholder="Enter your password here!" required></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" id="submit" value="Submit"></td>
+                    <td align="center"><input type="button" id="login" value="Already a User?"></td>
+                </tr>
+            </table>
+        </form>
+        <script src="homepage.js"></script>
+    </body>
+</html>
